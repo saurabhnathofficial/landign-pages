@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing page one</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div class="main">
+            <div class="nav">
+                <div class="logo">
+                    <img src="./images/icon1.png" height="80px">
+                    <span>nature</span>
+                </div>
+                <div class="manu">
+                    <ul>
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">gallery</a></li>
+                        <li><a href="#">services</a></li>
+                        <li><a href="#">faq</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section">
+                <div class="slider">
+                    <h1>lets go to the heven</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, cumque asperiores dignissimos
+                        dolore officiis nisi est blanditiis, incidunt quia accusamus nemo, soluta error quisquam autem
+                        amet labore tenetur quaerat. Adipisci?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, cumque asperiores dignissimos
+                        dolore officiis nisi est blanditiis, incidunt quia accusamus nemo, soluta error quisquam autem
+                        amet labore tenetur quaerat. Adipisci?</p>
+                </div>
+                <div class="slider2">
+                    <img src="./images/air.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+
+
+        var tl = gsap.timeline()
+
+        tl.from(".nav .logo,.manu ul li a", {
+            y: -100,
+            duration: 1,
+            stagger: 0.2,
+            opacity: 0
+        })
+        tl.from(".main h1,.slider p,.slider2 img", {
+            y: 100,
+            opacity: 0,
+            stagger: 0.3
+        })
+    </script>
+</body>
+
+</html>
